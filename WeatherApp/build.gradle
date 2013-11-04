@@ -23,6 +23,13 @@ android {
 }
 
 dependencies {
-	compile 'com.android.support:support-v4:19.0.0'
-	compile 'com.android.support:appcompat-v7:19.0.0'
+    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.android.support:appcompat-v7:18.0.0'
+    compile ('com.octo.android.robospice:robospice:1.4.6')  {
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+    compile ('com.octo.android.robospice:robospice-spring-android:1.4.6')  {
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
 }
