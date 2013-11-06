@@ -20,6 +20,14 @@ android {
         minSdkVersion 7
         targetSdkVersion 18
     }
+
+    buildTypes {
+        debug {
+            debuggable true
+            zipAlign true
+        }
+    }
+
     productFlavors {
         free {
             packageName "com.ruenzuo.weatherapp.free"
