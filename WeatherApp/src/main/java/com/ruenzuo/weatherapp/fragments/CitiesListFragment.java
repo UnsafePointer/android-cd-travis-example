@@ -7,7 +7,7 @@ import com.octo.android.robospice.JacksonSpringAndroidSpiceService;
 import com.octo.android.robospice.persistence.DurationInMillis;
 import com.octo.android.robospice.persistence.exception.SpiceException;
 import com.octo.android.robospice.request.listener.RequestListener;
-import com.ruenzuo.weatherapp.activities.CitiesActivity;
+import com.ruenzuo.weatherapp.base.CitiesBaseActivity;
 import com.ruenzuo.weatherapp.adapters.CitiesAdapter;
 import com.ruenzuo.weatherapp.pojos.City;
 import com.ruenzuo.weatherapp.pojos.ListCities;
@@ -22,7 +22,6 @@ import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
-import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
@@ -65,9 +64,9 @@ public class CitiesListFragment extends ListFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        CitiesActivity citiesActivity = (CitiesActivity) getActivity();
+        CitiesBaseActivity citiesBaseActivity = (CitiesBaseActivity) getActivity();
         spiceManager = new SpiceManager(JacksonSpringAndroidSpiceService.class);
-        locationManager = (LocationManager) citiesActivity.
+        locationManager = (LocationManager) citiesBaseActivity.
                 getSystemService(Context.LOCATION_SERVICE);
         ArrayList<City> cities = new ArrayList<City>();
         CitiesAdapter adapter = new CitiesAdapter(getActivity(), cities);

@@ -20,6 +20,16 @@ android {
         minSdkVersion 7
         targetSdkVersion 18
     }
+    productFlavors {
+        free {
+            packageName "com.ruenzuo.weatherapp.free"
+            buildConfig "public final static boolean IS_FREE = true;"
+        }
+        paid {
+            packageName "com.ruenzuo.weatherapp.paid"
+            buildConfig "public final static boolean IS_FREE = false;"
+        }
+    }
 }
 
 dependencies {
@@ -32,4 +42,7 @@ dependencies {
         exclude group: 'com.google.android', module: 'support-v4'
     }
     compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+    freeCompile files (
+            'libs/GoogleAdMobAdsSdk-6.4.1.jar'
+    )
 }

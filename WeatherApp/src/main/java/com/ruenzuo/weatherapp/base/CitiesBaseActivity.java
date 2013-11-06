@@ -1,4 +1,4 @@
-package com.ruenzuo.weatherapp.activities;
+package com.ruenzuo.weatherapp.base;
 
 import com.ruenzuo.weatherapp.R;
 import android.os.Bundle;
@@ -12,11 +12,12 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.LinearLayout;
 
+import com.ruenzuo.weatherapp.activities.CityActivity;
 import com.ruenzuo.weatherapp.adapters.CitiesAdapter;
 import com.ruenzuo.weatherapp.fragments.CitiesListFragment;
 import com.ruenzuo.weatherapp.pojos.City;
 
-public class CitiesActivity extends ActionBarActivity implements CitiesListFragment.OnCitySelectedListener,
+public class CitiesBaseActivity extends ActionBarActivity implements CitiesListFragment.OnCitySelectedListener,
         CitiesListFragment.OnLoadCitiesListener, SearchView.OnQueryTextListener {
 
     private LinearLayout progressLayout;
@@ -77,7 +78,7 @@ public class CitiesActivity extends ActionBarActivity implements CitiesListFragm
 
     public void onCityItemSelected(City city) {
         Intent intent = new Intent(getApplicationContext(), CityActivity.class);
-        intent.putExtra(CityActivity.EXTRA_CITY, city);
+        intent.putExtra(CityBaseActivity.EXTRA_CITY, city);
         startActivity(intent);
     }
 

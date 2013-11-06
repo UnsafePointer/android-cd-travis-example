@@ -1,4 +1,4 @@
-package com.ruenzuo.weatherapp.activities;
+package com.ruenzuo.weatherapp.base;
 
 import com.ruenzuo.weatherapp.R;
 import com.ruenzuo.weatherapp.fragments.CityFragment;
@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 
-public class CityActivity extends ActionBarActivity {
+public class CityBaseActivity extends ActionBarActivity {
 
     public static final String EXTRA_CITY = "city";
 
