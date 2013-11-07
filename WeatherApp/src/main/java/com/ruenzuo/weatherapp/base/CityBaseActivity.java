@@ -25,7 +25,7 @@ public class CityBaseActivity extends ActionBarActivity {
             try {
                 City clone = (City) city.clone();
                 fragment.setCity(clone);
-                setTitle(clone.getName());
+                getSupportActionBar().setTitle(clone.getName());
             } catch (CloneNotSupportedException e) {
                 e.printStackTrace();
             }
