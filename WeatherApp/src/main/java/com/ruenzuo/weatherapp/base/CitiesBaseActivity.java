@@ -1,5 +1,6 @@
 package com.ruenzuo.weatherapp.base;
 
+import com.ruenzuo.weatherapp.BuildConfig;
 import com.ruenzuo.weatherapp.R;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -36,8 +37,13 @@ public class CitiesBaseActivity extends ActionBarActivity implements CitiesListF
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_cities, menu);
         MenuItem searchItem = menu.findItem(R.id.action_search);
-        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
-        setupSearchView(searchView);
+        if (BuildConfig.IS_FREE) {
+            searchItem.setVisible(false);
+        }
+        else {
+            SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+            setupSearchView(searchView);
+        }
         return super.onCreateOptionsMenu(menu);
     }
 
