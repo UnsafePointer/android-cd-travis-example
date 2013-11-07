@@ -11,7 +11,7 @@ __Travis CI Status__
 
 __Scenario:__
 
-This example shows you how to configure an Android application with two product flavors (free and paid) taking advantage of the new build system to use different assets for each application, implemented different features through build config injection and test and deploy each app individual with Travis and TestFlight. I found this especially useful when you are on a project with a large team divided and each part is developing/testing different features on the same application.
+This example shows you how to configure an Android application with two product flavors (free and paid) taking advantage of the new build system to use different assets for each application, implement different features through build config injection and test and deploy each app individualy with Travis and TestFlight. I found this especially useful when you are on a project with a large team divided and each part is developing/testing different features on the same application.
 
 __Building and Testing:__
 
