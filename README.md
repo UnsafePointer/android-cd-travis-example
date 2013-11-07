@@ -18,13 +18,13 @@ __Building and Testing:__
 In order to build and test the application, clone this repo:
 
 ```sh
-$ git clone git@github.com:Ruenzuo/north-american-ironman.git
+$ git clone git@github.com:Ruenzuo/cloaked-octo-cyril.git
 ```
 
 Then execute the tests with the gradle wrapper, you will need some device or emulator connected to adb before:
 
 ```sh
-$ cd north-american-ironman && ./gradlew connectedInstrumentTest
+$ cd cloaked-octo-cyril && ./gradlew connectedInstrumentTest
 ```
 
 ![cd-free-screenshot-1.png](https://dl.dropboxusercontent.com/u/99114459/cd-free-screenshot-1.png)&nbsp;
