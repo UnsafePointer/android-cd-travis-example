@@ -26,7 +26,8 @@ public class CitiesActivityFunctionalTests extends ActivityInstrumentationTestCa
     public void testStartSecondActivity() throws Throwable {
         Instrumentation.ActivityMonitor monitor = getInstrumentation().addMonitor(CityActivity.class.getName(), null, false);
         if (BuildConfig.IS_FREE) {
-
+            Thread.sleep(5000);
+            ViewAsserts.assertOnScreen(activity.getWindow().getDecorView(), activity.getAdView());
         }
         else {
             ViewAsserts.assertOnScreen(activity.getWindow().getDecorView(), activity.getSearchItem().getActionView());

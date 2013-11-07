@@ -1,6 +1,7 @@
 package com.ruenzuo.weatherapp.activities;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.FrameLayout;
 import com.google.ads.AdRequest;
 import com.google.ads.AdSize;
@@ -12,6 +13,16 @@ public class CitiesActivity extends CitiesBaseActivity {
 
     private AdView adView;
 
+    private View mAdView;
+
+    public View getAdView() {
+        return mAdView;
+    }
+
+    public void setAdView(View adView) {
+        this.mAdView = adView;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +30,7 @@ public class CitiesActivity extends CitiesBaseActivity {
         FrameLayout layout = (FrameLayout)findViewById(R.id.frameLayout);
         layout.addView(adView);
         adView.loadAd(new AdRequest());
+        setAdView(adView);
     }
 
     @Override
