@@ -22,6 +22,15 @@ public class CitiesBaseActivity extends ActionBarActivity implements CitiesListF
         CitiesListFragment.OnLoadCitiesListener, SearchView.OnQueryTextListener {
 
     private LinearLayout progressLayout;
+    private MenuItem searchItem;
+
+    public MenuItem getSearchItem() {
+        return searchItem;
+    }
+
+    public void setSearchItem(MenuItem searchItem) {
+        this.searchItem = searchItem;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +45,12 @@ public class CitiesBaseActivity extends ActionBarActivity implements CitiesListF
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_cities, menu);
-        MenuItem searchItem = menu.findItem(R.id.action_search);
+        setSearchItem(menu.findItem(R.id.action_search));
         if (BuildConfig.IS_FREE) {
-            searchItem.setVisible(false);
+            getSearchItem().setVisible(false);
         }
         else {
-            SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+            SearchView searchView = (SearchView) MenuItemCompat.getActionView(getSearchItem());
             setupSearchView(searchView);
         }
         return super.onCreateOptionsMenu(menu);
