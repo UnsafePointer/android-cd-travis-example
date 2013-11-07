@@ -42,14 +42,14 @@ script:
   - TERM=dumb ./gradlew connectedInstrumentTest
   - echo $TRAVIS_BUILD_DIR
   - curl "http://testflightapp.com/api/builds.json"
-      -F file=@"$TRAVIS_BUILD_DIR/FlavorTest/build/apk/FlavorTest-free-release.apk"
+      -F file=@"$TRAVIS_BUILD_DIR/WeatherApp/build/apk/WeatherApp-free-debug.apk"
       -F api_token="2fc352915910baf8c8051b4da2f8aa5f_MTMwMjcxMzIwMTMtMDktMTIgMjM6MzQ6MTkuOTIyMDk2"
       -F team_token="89b8a856bfc83b7af70257aaac2dd586_Mjk2MDYwMjAxMy0xMS0wNSAyMzozMToyMy4xMjU1NTE"
       -F notes="Build by Travis CI"
       -F notify=True
       -F distribution_lists="Home"
   - curl "http://testflightapp.com/api/builds.json"
-      -F file=@"$TRAVIS_BUILD_DIR/FlavorTest/build/apk/FlavorTest-paid-release.apk"
+      -F file=@"$TRAVIS_BUILD_DIR/WeatherApp/build/apk/WeatherApp-paid-debug.apk"
       -F api_token="2fc352915910baf8c8051b4da2f8aa5f_MTMwMjcxMzIwMTMtMDktMTIgMjM6MzQ6MTkuOTIyMDk2"
       -F team_token="89b8a856bfc83b7af70257aaac2dd586_Mjk2MDYwMjAxMy0xMS0wNSAyMzozMToyMy4xMjU1NTE"
       -F notes="Build by Travis CI"

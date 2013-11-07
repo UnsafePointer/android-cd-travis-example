@@ -5,15 +5,14 @@ import android.test.ActivityInstrumentationTestCase2;
 import android.test.ViewAsserts;
 
 import com.ruenzuo.weatherapp.BuildConfig;
-import com.ruenzuo.weatherapp.activities.CitiesActivity;
 import com.ruenzuo.weatherapp.activities.CityActivity;
 
-public class CitiesActivityFunctionalTests extends ActivityInstrumentationTestCase2 <CitiesActivity> {
+public class CityActivityFunctionalTests extends ActivityInstrumentationTestCase2<CityActivity> {
 
-    private CitiesActivity activity;
+    private CityActivity activity;
 
-    public CitiesActivityFunctionalTests() {
-        super(CitiesActivity.class);
+    public CityActivityFunctionalTests(Class<CityActivity> activityClass) {
+        super(activityClass);
     }
 
     @Override
@@ -28,9 +27,6 @@ public class CitiesActivityFunctionalTests extends ActivityInstrumentationTestCa
         if (BuildConfig.IS_FREE) {
             Thread.sleep(5000);
             ViewAsserts.assertOnScreen(activity.getWindow().getDecorView(), activity.getAdView());
-        }
-        else {
-            ViewAsserts.assertOnScreen(activity.getWindow().getDecorView(), activity.getSearchItem().getActionView());
         }
     }
 
