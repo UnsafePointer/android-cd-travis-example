@@ -28,9 +28,11 @@ public class CitiesActivityFunctionalTests extends ActivityInstrumentationTestCa
         if (BuildConfig.IS_FREE) {
             Thread.sleep(5000);
             ViewAsserts.assertOnScreen(activity.getWindow().getDecorView(), activity.getAdView());
+            assertEquals(false, activity.getSearchItem().isVisible());
         }
         else {
             ViewAsserts.assertOnScreen(activity.getWindow().getDecorView(), activity.getSearchItem().getActionView());
+            assertNull(activity.getAdView());
         }
     }
 

@@ -27,6 +27,7 @@ public class CityActivityFunctionalTests extends ActivityInstrumentationTestCase
         if (BuildConfig.IS_FREE) {
             Thread.sleep(5000);
             ViewAsserts.assertOnScreen(activity.getWindow().getDecorView(), activity.getAdView());
+            assertNull(activity.getAdView());
         }
     }
 
