@@ -31,6 +31,7 @@ $ cd cloaked-octo-cyril && ./gradlew connectedInstrumentTest
 ![cd-free-screenshot-2.png](https://dl.dropboxusercontent.com/u/99114459/cd-free-screenshot-2.png)
 ![cd-paid-screenshot-1.png](https://dl.dropboxusercontent.com/u/99114459/cd-paid-screenshot-1.png)&nbsp;
 ![cd-paid-screenshot-2.png](https://dl.dropboxusercontent.com/u/99114459/cd-paid-screenshot-2.png)
+![cd-paid-screenshot-3.png](https://dl.dropboxusercontent.com/u/99114459/cd-paid-screenshot-3.png)
 
 For more information on how to get started with each tool/framework, go to:  
 gradle: https://github.com/gradle/gradle  
