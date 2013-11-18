@@ -1,9 +1,9 @@
-cloaked-octo-cyril
-==================
+Continuous Delivery on Android with Travis
+==========================================
 
 __Description:__
 
-This is a continous delivery example with an Android application using gradle as the build system and dependency manager, Robospice for asynchronous networking inside the Android app, Instrumentation framework for functional testing, Support Library v4 and v7 for compatibility, Travis as the continuous integration server and TestFlight as the deployment service. I'll publish the detail setup and explanations for all these in my blog very soon.
+This is a continuous delivery example with an Android application using gradle as the build system and dependency manager, Robospice for asynchronous networking inside the Android app, Instrumentation framework for functional testing, Support Library v4 and v7 for compatibility, Travis as the continuous integration server and TestFlight as the deployment service. I'll publish the detail setup and explanations for all these in my blog very soon.
 
 __Travis CI Status__
 
