@@ -7,7 +7,7 @@ This is a continuous delivery example with an Android application using gradle a
 
 __Travis CI Status__
 
-[![Build Status](https://travis-ci.org/Ruenzuo/cloaked-octo-cyril.png)](https://travis-ci.org/Ruenzuo/cloaked-octo-cyril)
+[![Build Status](https://travis-ci.org/Ruenzuo/android-cd-travis-example.png)](https://travis-ci.org/Ruenzuo/android-cd-travis-example)
 
 __Scenario:__
 
