@@ -24,7 +24,7 @@ $ git clone git@github.com:Ruenzuo/android-cd-travis-example.git
 Then execute the tests with the gradle wrapper, you will need some device or emulator connected to adb before:
 
 ```sh
-$ cd android-cd-travis-example && ./gradlew connectedInstrumentTest
+$ cd android-cd-travis-example && chmod +x gradlew && ./gradlew connectedInstrumentTest
 ```
 
 ![cd-free-screenshot-1.png](https://dl.dropboxusercontent.com/u/99114459/cd-free-screenshot-1.png)&nbsp;
