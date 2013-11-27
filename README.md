@@ -3,7 +3,7 @@ Continuous Delivery on Android with Travis
 
 __Description:__
 
-This is a continuous delivery example with an Android application using gradle as the build system and dependency manager, Robospice for asynchronous networking inside the Android app, Instrumentation framework for functional testing, Support Library v4 and v7 for compatibility, Travis as the continuous integration server and TestFlight as the deployment service. I'll publish the detail setup and explanations for all these in my blog very soon.
+This is a continuous delivery example with an Android application using gradle as the build system and dependency manager, Robospice for asynchronous networking inside the Android app, Instrumentation framework for functional testing, Support Library v4 and v7 for compatibility, Travis as the continuous integration server and TestFlight as the deployment service. You can find the detail setup and explanations for all these in my [blog](http://ruenzuo.github.io/continuous-delivery-on-android-part-i/).
 
 __Travis CI Status__
 
@@ -44,7 +44,7 @@ TestFlight: https://testflightapp.com/
 __To-Do__
 
 * `[✓]` <del>Make it public.</del>
-* `[ ]` Write the blog post.
+* `[✓]` <del>Write the blog post</del>. It's [here](http://ruenzuo.github.io/continuous-delivery-on-android-part-i/).
 * `[ ]` Write better tests. Currently I'm doing some ugly workarounds for testing ads, I'm accepting suggestions on this :)
 
 License
