@@ -34,12 +34,12 @@ $ cd android-cd-travis-example && chmod +x gradlew && ./gradlew connectedInstrum
 ![cd-paid-screenshot-3.png](https://dl.dropboxusercontent.com/u/12352209/GitHub/cd-paid-screenshot-3.png)
 
 For more information on how to get started with each tool/framework, go to:  
-gradle: https://github.com/gradle/gradle  
-Robospice: https://github.com/octo-online/robospice  
-Instrumentation: http://developer.android.com/tools/testing/index.html  
-Support Library: http://developer.android.com/tools/support-library/index.html  
-Travis: https://travis-ci.org/  
-TestFlight: https://testflightapp.com/
+[gradle](https://github.com/gradle/gradle)  
+[Robospice](https://github.com/octo-online/robospice)  
+[Instrumentation](http://developer.android.com/tools/testing/index.html)  
+[Support Library](http://developer.android.com/tools/support-library/index.html)  
+[Travis](https://travis-ci.org/)  
+[TestFlight](https://testflightapp.com/)
 
 __To-Do__
 
@@ -52,7 +52,7 @@ License
 
     The MIT License (MIT)
 
-    Copyright (c) 2013 Renzo Crisóstomo
+    Copyright (c) 2014 Renzo Crisóstomo
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of
     this software and associated documentation files (the "Software"), to deal in
