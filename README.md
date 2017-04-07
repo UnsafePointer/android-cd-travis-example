@@ -27,11 +27,11 @@ Then execute the tests with the gradle wrapper, you will need some device or emu
 $ cd android-cd-travis-example && chmod +x gradlew && ./gradlew connectedInstrumentTest
 ```
 
-![cd-free-screenshot-1.png](https://dl.dropboxusercontent.com/u/12352209/GitHub/cd-free-screenshot-1.png)&nbsp;
-![cd-free-screenshot-2.png](https://dl.dropboxusercontent.com/u/12352209/GitHub/cd-free-screenshot-2.png)
-![cd-paid-screenshot-1.png](https://dl.dropboxusercontent.com/u/12352209/GitHub/cd-paid-screenshot-1.png)&nbsp;
-![cd-paid-screenshot-2.png](https://dl.dropboxusercontent.com/u/12352209/GitHub/cd-paid-screenshot-2.png)
-![cd-paid-screenshot-3.png](https://dl.dropboxusercontent.com/u/12352209/GitHub/cd-paid-screenshot-3.png)
+![cd-free-screenshot-1.png](https://raw.githubusercontent.com/Ruenzuo/res/master/cd-free-screenshot-1.png)&nbsp;
+![cd-free-screenshot-2.png](https://raw.githubusercontent.com/Ruenzuo/res/master/cd-free-screenshot-2.png)
+![cd-paid-screenshot-1.png](https://raw.githubusercontent.com/Ruenzuo/res/master/cd-paid-screenshot-1.png)&nbsp;
+![cd-paid-screenshot-2.png](https://raw.githubusercontent.com/Ruenzuo/res/master/cd-paid-screenshot-2.png)
+![cd-paid-screenshot-3.png](https://raw.githubusercontent.com/Ruenzuo/res/master/cd-paid-screenshot-3.png)
 
 For more information on how to get started with each tool/framework, go to:  
 [gradle](https://github.com/gradle/gradle)  
